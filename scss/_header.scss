@@ -1,0 +1,29 @@
+.header {
+  padding-top: 10px;
+
+  &__spacer {
+    & h1 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__nav {
+    color: #000;
+  }
+
+  &__links {
+    margin-top: 20px;
+
+    & a {
+      padding: 10px;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  &__links &__links a:hover {
+    text-decoration: underline;
+  }
+}

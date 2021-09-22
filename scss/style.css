@@ -1,0 +1,101 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  color: #000;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-d-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-d-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.text-a-c {
+  text-align: center;
+}
+
+.header {
+  padding-top: 10px;
+}
+
+.header__spacer h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header__nav {
+  color: #000;
+}
+
+.header__links {
+  margin-top: 20px;
+}
+
+.header__links a {
+  padding: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__links .header__links a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

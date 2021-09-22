@@ -1,0 +1,56 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  color: #000;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+// Flexbos styles
+.flex {
+  display: flex;
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-d-col {
+    flex-direction: column;
+  }
+
+  &-d-row {
+    flex-direction: row;
+  }
+}
+
+.text-a-c {
+  text-align: center;
+}

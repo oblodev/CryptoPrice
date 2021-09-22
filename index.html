@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="scss/style.css" />
     <title>CryptoPrice - developed by oblodev</title>
   </head>
@@ -27,10 +34,54 @@
         </div>
       </nav>
     </header>
+
     <section class="heading flex flex-jc-c">
       <div class="flex-d-col text-a-c">
-        <h1>Cryptocurrency Prices by Market Cap</h1>
+        <h1>TOP 100 - Cryptocurrency Prices by Market Cap</h1>
         <p>The global crypto market cap is $1.96T</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="crypto container">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Crypto</th>
+              <th scope="col">Price</th>
+              <th scope="col">Change % (24h)</th>
+              <th scope="col">Marketcap</th>
+              <th scope="col">Volume (24)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Bitcoin (BTC)</td>
+              <td>43 000 USD</td>
+              <td>12,00%</td>
+              <td>1 900 000 Mld</td>
+              <td>900 000 Mld</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Ethereum (ETH)</td>
+              <td>3 000 USD</td>
+              <td>2,00%</td>
+              <td>900 000 Mld</td>
+              <td>100 000 Mld</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cardano (ADA)</td>
+              <td>3,00 USD</td>
+              <td>1,00%</td>
+              <td>1 000 000 Mld</td>
+              <td>90 000 Mld</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 

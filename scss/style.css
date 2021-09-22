@@ -76,8 +76,8 @@ a:hover {
 }
 
 .header__spacer h1 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 20px !important;
+  font-weight: 400 !important;
 }
 
 .header__nav {
@@ -97,5 +97,14 @@ a:hover {
 
 .header__links .header__links a:hover {
   text-decoration: underline;
+}
+
+.heading {
+  margin: 50px;
+}
+
+.heading h1 {
+  font-size: 28px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

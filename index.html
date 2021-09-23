@@ -38,7 +38,10 @@
     <section class="heading flex flex-jc-c">
       <div class="flex-d-col text-a-c">
         <h1>TOP 100 - Cryptocurrency Prices by Market Cap</h1>
-        <p>The global crypto market cap is $1.96T</p>
+        <p>
+          The global crypto market cap is
+          <span class="blue bold" id="marketcap"></span>
+        </p>
       </div>
     </section>
 
@@ -49,10 +52,10 @@
             <tr>
               <th scope="col">#</th>
               <th scope="col">Crypto</th>
-              <th scope="col">Price</th>
-              <th scope="col">Change % (24h)</th>
-              <th scope="col">Marketcap</th>
-              <th scope="col">Volume (24)</th>
+              <th scope="col" class="table__t-a-r">Price</th>
+              <th scope="col" class="table__t-a-r">Change (24h)</th>
+              <th scope="col" class="table__t-a-r">Marketcap</th>
+              <th scope="col" class="table__t-a-r">Volume (24)</th>
             </tr>
           </thead>
           <tbody id="crypto"></tbody>

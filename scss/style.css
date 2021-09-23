@@ -71,6 +71,10 @@ a:hover {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .header {
   padding-top: 10px;
 }
@@ -106,5 +110,25 @@ a:hover {
 .heading h1 {
   font-size: 28px;
   font-weight: 700;
+}
+
+.table {
+  font-weight: 700;
+}
+
+.table__t-a-r {
+  text-align: right;
+}
+
+.red {
+  color: #ea3943;
+}
+
+.green {
+  color: #16c784;
+}
+
+.blue {
+  color: #3861fb;
 }
 /*# sourceMappingURL=style.css.map */

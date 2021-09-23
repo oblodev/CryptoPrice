@@ -1,3 +1,5 @@
+const cryptoTableData = document.getElementById("crypto");
+
 function getCryptoData() {
   fetch(`https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest`, {
     method: "GET",
@@ -9,6 +11,7 @@ function getCryptoData() {
     .then((data) => {
       cryptoData = data.data;
       console.log(cryptoData);
+      getData(cryptoData);
     })
     .catch((err) => {
       console.error(err);
@@ -17,36 +20,21 @@ function getCryptoData() {
 
 getCryptoData();
 
-/*
-function getData(leagueData) {
-
+function getData(cryptoPriceData) {
   let data = "";
-  leagueData.map((values) => {
-    if (values.rank == "1") {
-      primary = "table-primary";
-    } else if (values.rank >= "2" && values.rank <= "4") {
-      primary = "table-success";
-    } else if (values.rank >= "18" && values.rank <= "20") {
-      primary = "table-danger";
-    } else if (values.rank == "5") {
-      primary = "table-warning";
-    } else {
-      primary = "";
-    }
+  cryptoPriceData.map((values) => {
+    console.log(values);
+
     data += `
-        <tr class=${primary}>
-          <th cope="row">${values.rank}</th>
-          <td class="logo-width"><img src="${values.team.logo}" /> ${values.team.name} </td>
-          <td>${values.all.played}</td>
-          <td>${values.all.win}</td>
-          <td>${values.all.draw}</td>
-          <td>${values.all.lose}</td>
-          <td>${values.all.goals.for}:${values.all.goals.against}</td>
-          <td>${values.goalsDiff}</td>
-          <td>${values.points}</td>
+        <tr>
+          <th cope="row">${values.cmc_rank} </th>
+          <td>${values.name} (${values.symbol})</td>
+          <td>${values.quote.USD.price} $</td>
+          <td>${values.quote.USD.percent_change_24h} $</td>
+          <td>${values.quote.USD.market_cap} $</td>
+          <td>${values.quote.USD.volume_24h} $</td>
         </tr>
         `;
   });
-  ranking.innerHTML = data;
+  cryptoTableData.innerHTML = data;
 }
-*/

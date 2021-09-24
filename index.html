@@ -40,7 +40,8 @@
         <h1>TOP 100 - Cryptocurrency Prices by Market Cap</h1>
         <p>
           The global crypto market cap is
-          <span class="blue bold" id="marketcap"></span>
+          <span class="blue bold" id="marketcap"></span>, a
+          <span id="marketcap-change"></span> change in the last 24 hours.
         </p>
       </div>
     </section>
@@ -53,10 +54,11 @@
               <th scope="col">#</th>
               <th scope="col">Crypto</th>
               <th scope="col" class="table__t-a-r">Price</th>
+              <th scope="col" class="table__t-a-r">Change (1h)</th>
               <th scope="col" class="table__t-a-r">Change (24h)</th>
               <th scope="col" class="table__t-a-r">Change (7d)</th>
-              <th scope="col" class="table__t-a-r">Marketcap</th>
               <th scope="col" class="table__t-a-r">Volume (24)</th>
+              <th scope="col" class="table__t-a-r">Market Cap</th>
             </tr>
           </thead>
           <tbody id="crypto"></tbody>
@@ -71,5 +73,6 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/test.js"></script>
   </body>
 </html>

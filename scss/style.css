@@ -75,6 +75,29 @@ a:hover {
   font-weight: bold;
 }
 
+.red {
+  color: #ea3943;
+}
+
+.green {
+  color: #16c784;
+}
+
+.blue {
+  color: #61affe;
+}
+
+.img-size {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.p-16 {
+  padding: 16px !important;
+}
+
 .header {
   padding-top: 10px;
 }
@@ -113,23 +136,11 @@ a:hover {
 }
 
 .table {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .table__t-a-r {
   text-align: right;
-}
-
-.red {
-  color: #ea3943;
-}
-
-.green {
-  color: #16c784;
-}
-
-.blue {
-  color: #3861fb;
 }
 
 .footer {

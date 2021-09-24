@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 800px;
+    text-align: center;
+    border-top: 1px solid #000;
+
+    & h2 {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+}

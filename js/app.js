@@ -91,8 +91,11 @@ function getData(cryptoPriceData) {
         <tr>
           <th cope="row">${values.cmc_rank} </th>
           <td>${values.name} (${values.symbol})</td>
-          <td class="${color} table__t-a-r"> $${formattedCryptoPrice}</td>
+          <td class="table__t-a-r"> $${formattedCryptoPrice}</td>
           <td class="${color} table__t-a-r">${values.quote.USD.percent_change_24h.toFixed(
+      2
+    )}%</td>
+    <td class="${color} table__t-a-r">${values.quote.USD.percent_change_7d.toFixed(
       2
     )}%</td>
           <td class="table__t-a-r">$${formattedMarketCap}</td>

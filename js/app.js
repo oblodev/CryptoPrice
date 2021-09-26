@@ -1,6 +1,7 @@
 const cryptoTableData = document.getElementById("crypto");
-const showMarketCap = document.getElementById("marketcap");
+//const showMarketCap = document.getElementById("marketcap");
 const showMarketCapChange = document.getElementById("marketcap-change");
+const theMarketCap = document.getElementById("marketcap-info");
 
 function getCryptoMarketCap() {
   fetch(`https://api.coingecko.com/api/v3/global`)
@@ -12,8 +13,23 @@ function getCryptoMarketCap() {
       const formatter = new Intl.NumberFormat("en");
       const formatedMarketCap = formatter.format(marketCap);
       const formatedMarketCapChange = formatter.format(marketCapChange);
-      showMarketCap.textContent = `${formatedMarketCap} T`;
-      showMarketCapChange.textContent = ` ${formatedMarketCapChange}% `;
+      //showMarketCap.textContent = `${formatedMarketCap} T`;
+      //showMarketCapChange.textContent = ` ${formatedMarketCapChange}% `;
+
+      if (formatedMarketCapChange < 0) {
+        colorMC = "red";
+      } else if (formatedMarketCapChange > 0) {
+        colorMC = "green";
+      } else {
+        colorMC = "";
+      }
+
+      theMarketCap.innerHTML = `<p class="bold">Global Crypto Marketcap</p>
+                                <div class="blue bold p-t-10 f-s-20"><p>${formatedMarketCap} T</p></div>
+                                <div class="p-t-10">
+                                <p>A <span class="${colorMC} f-s-20">${formatedMarketCapChange}%</span> change in the last 24 hours</p>
+                                </div>
+                                `;
 
       if (formatedMarketCapChange < 0) {
         showMarketCapChange.classList.add("red");
@@ -36,6 +52,7 @@ function getCryptoData() {
     .then((data) => {
       //console.log(data);
       const cryptoData = data;
+      //console.log(cryptoData);
 
       getData(cryptoData);
     })

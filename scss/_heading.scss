@@ -5,4 +5,58 @@
     font-size: 28px;
     font-weight: 700;
   }
+
+  & .gainer-loser {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    & .marketcap {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+      padding: 8px 40px;
+      border: 1px solid #000;
+      margin: 20px;
+    }
+
+    & .gainer-wrapper,
+    & .loser-wrapper {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+      padding: 6px 80px;
+      border: 1px solid #000;
+      margin: 20px;
+
+      & .gainer-price,
+      & .loser-price {
+        padding: 4px;
+        font-size: 20px;
+
+        & .m-r-40 {
+          margin-right: 40px;
+        }
+      }
+
+      & .gainer-name,
+      & .loser-name {
+        padding: 10px;
+      }
+    }
+
+    & .marketcap {
+      border-top: 8px solid #61affe;
+    }
+
+    & .gainer-wrapper {
+      border-top: 8px solid #16c784;
+    }
+
+    & .loser-wrapper {
+      border-top: 8px solid #ea3943;
+    }
+  }
 }

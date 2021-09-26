@@ -87,6 +87,10 @@ a:hover {
   color: #61affe;
 }
 
+.gray {
+  color: #a0aec0;
+}
+
 .img-size {
   width: 20px;
   height: 20px;
@@ -96,6 +100,18 @@ a:hover {
 
 .p-16 {
   padding: 16px !important;
+}
+
+.p-t-10 {
+  padding-top: 10px;
+}
+
+.f-s-20 {
+  font-size: 20px;
+}
+
+.m-r-10 {
+  margin-right: 20px;
 }
 
 .header {
@@ -135,6 +151,83 @@ a:hover {
 .heading h1 {
   font-size: 28px;
   font-weight: 700;
+}
+
+.heading .gainer-loser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.heading .gainer-loser .marketcap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+  padding: 8px 40px;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.heading .gainer-loser .gainer-wrapper,
+.heading .gainer-loser .loser-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
+  padding: 6px 80px;
+  border: 1px solid #000;
+  margin: 20px;
+}
+
+.heading .gainer-loser .gainer-wrapper .gainer-price,
+.heading .gainer-loser .gainer-wrapper .loser-price,
+.heading .gainer-loser .loser-wrapper .gainer-price,
+.heading .gainer-loser .loser-wrapper .loser-price {
+  padding: 4px;
+  font-size: 20px;
+}
+
+.heading .gainer-loser .gainer-wrapper .gainer-price .m-r-40,
+.heading .gainer-loser .gainer-wrapper .loser-price .m-r-40,
+.heading .gainer-loser .loser-wrapper .gainer-price .m-r-40,
+.heading .gainer-loser .loser-wrapper .loser-price .m-r-40 {
+  margin-right: 40px;
+}
+
+.heading .gainer-loser .gainer-wrapper .gainer-name,
+.heading .gainer-loser .gainer-wrapper .loser-name,
+.heading .gainer-loser .loser-wrapper .gainer-name,
+.heading .gainer-loser .loser-wrapper .loser-name {
+  padding: 10px;
+}
+
+.heading .gainer-loser .marketcap {
+  border-top: 8px solid #61affe;
+}
+
+.heading .gainer-loser .gainer-wrapper {
+  border-top: 8px solid #16c784;
+}
+
+.heading .gainer-loser .loser-wrapper {
+  border-top: 8px solid #ea3943;
 }
 
 .table {

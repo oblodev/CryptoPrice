@@ -4,6 +4,7 @@
   & h1 {
     font-size: 28px;
     font-weight: 700;
+    margin-bottom: 60px;
   }
 
   & .gainer-loser {
@@ -16,9 +17,13 @@
       flex-direction: column;
       -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-      padding: 8px 40px;
-      border: 1px solid #000;
+      padding: 4px 30px;
+      border: 1px solid #a0aec0;
       margin: 20px;
+    }
+
+    & .marketcap p {
+      font-size: 17px;
     }
 
     & .gainer-wrapper,
@@ -27,9 +32,14 @@
       flex-direction: column;
       -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-      padding: 6px 80px;
-      border: 1px solid #000;
+      padding: 4px 80px;
+      border: 1px solid #a0aec0;
       margin: 20px;
+
+      & p,
+      & p {
+        font-size: 17px;
+      }
 
       & .gainer-price,
       & .loser-price {
@@ -44,6 +54,12 @@
       & .gainer-name,
       & .loser-name {
         padding: 10px;
+        font-size: 18px;
+
+        & img {
+          width: 30px;
+          margin-right: 10px;
+        }
       }
     }
 

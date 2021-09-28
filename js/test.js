@@ -59,14 +59,16 @@ function workTestData(testData) {
   }
 
   theGainer.innerHTML = ` <p class="bold">Biggest Gainer (24h)</p>
-                          <div id="gainer-logo"><img src="${gainerLogo}" style="width: 52px;"></div>
-                          <div id="gainer-name" class="bold gainer-name">${nameGainer} <span class="gray">(${gainerSymbol.toUpperCase()})</span></div>
+                          <div id="gainer-logo">
+                          </div>
+                          <div id="gainer-name" class="bold gainer-name"><img src="${gainerLogo}">${nameGainer} <span class="gray">(${gainerSymbol.toUpperCase()})</span>
+                          </div>
                           <div id="gainer-price" class="gainer-price"><span class="m-r-40">$${gainerPrice}</span>  <span class="green">${maxI.toFixed(
     2
   )}%</span>   </div>`;
   theLoser.innerHTML = ` <p class="bold">Biggest Loser (24h)</p>
-                          <div id="gainer-logo"><img src="${loserLogo}" style="width: 52px;"></div>
-                          <div id="gainer-name" class="bold loser-name">${nameLoser} <span class="gray">(${loserSymbol.toUpperCase()})</span></div>
+                          <div id="gainer-logo"></div>
+                          <div id="gainer-name" class="bold loser-name"><img src="${loserLogo}">${nameLoser} <span class="gray">(${loserSymbol.toUpperCase()})</span></div>
                           <div id="loser-price" class="loser-price"><span class="m-r-40">$${loserPrice}</span>  <span class="red">${minI.toFixed(
     2
   )}% </span>  </div>`;

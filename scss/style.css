@@ -151,6 +151,7 @@ a:hover {
 .heading h1 {
   font-size: 28px;
   font-weight: 700;
+  margin-bottom: 60px;
 }
 
 .heading .gainer-loser {
@@ -175,9 +176,13 @@ a:hover {
           flex-direction: column;
   -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-  padding: 8px 40px;
-  border: 1px solid #000;
+  padding: 4px 30px;
+  border: 1px solid #a0aec0;
   margin: 20px;
+}
+
+.heading .gainer-loser .marketcap p {
+  font-size: 17px;
 }
 
 .heading .gainer-loser .gainer-wrapper,
@@ -191,9 +196,16 @@ a:hover {
           flex-direction: column;
   -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-  padding: 6px 80px;
-  border: 1px solid #000;
+  padding: 4px 80px;
+  border: 1px solid #a0aec0;
   margin: 20px;
+}
+
+.heading .gainer-loser .gainer-wrapper p,
+.heading .gainer-loser .gainer-wrapper p,
+.heading .gainer-loser .loser-wrapper p,
+.heading .gainer-loser .loser-wrapper p {
+  font-size: 17px;
 }
 
 .heading .gainer-loser .gainer-wrapper .gainer-price,
@@ -216,6 +228,15 @@ a:hover {
 .heading .gainer-loser .loser-wrapper .gainer-name,
 .heading .gainer-loser .loser-wrapper .loser-name {
   padding: 10px;
+  font-size: 18px;
+}
+
+.heading .gainer-loser .gainer-wrapper .gainer-name img,
+.heading .gainer-loser .gainer-wrapper .loser-name img,
+.heading .gainer-loser .loser-wrapper .gainer-name img,
+.heading .gainer-loser .loser-wrapper .loser-name img {
+  width: 30px;
+  margin-right: 10px;
 }
 
 .heading .gainer-loser .marketcap {

@@ -4,4 +4,18 @@
   &__t-a-r {
     text-align: right;
   }
+
+  & .hide {
+  }
+}
+
+@media (max-width: 768px) {
+  .table {
+    & thead {
+      font-size: 16px;
+    }
+
+    & .hide {
+    }
+  }
 }

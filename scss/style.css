@@ -114,6 +114,25 @@ a:hover {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+  }
+  .heading {
+    margin-top: 60px;
+  }
+  .heading .gainer-loser {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
 .header {
   padding-top: 10px;
   width: 100%;
@@ -196,7 +215,7 @@ a:hover {
           flex-direction: column;
   -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-  padding: 4px 80px;
+  padding: 5px 40px;
   border: 1px solid #a0aec0;
   margin: 20px;
 }
@@ -251,12 +270,34 @@ a:hover {
   border-top: 8px solid #ea3943;
 }
 
+@media (max-width: 768px) {
+  .heading {
+    margin-top: 60px;
+  }
+  .heading .gainer-loser {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .heading h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
 .table {
   font-weight: 500;
 }
 
 .table__t-a-r {
   text-align: right;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    font-size: 16px;
+  }
 }
 
 .footer {

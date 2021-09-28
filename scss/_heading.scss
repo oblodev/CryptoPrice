@@ -32,7 +32,7 @@
       flex-direction: column;
       -webkit-box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 13px 12px -11px rgba(0, 0, 0, 0.75);
-      padding: 4px 80px;
+      padding: 5px 40px;
       border: 1px solid #a0aec0;
       margin: 20px;
 
@@ -73,6 +73,21 @@
 
     & .loser-wrapper {
       border-top: 8px solid #ea3943;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin-top: 60px;
+
+    & .gainer-loser {
+      flex-direction: column;
+    }
+
+    & h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
     }
   }
 }

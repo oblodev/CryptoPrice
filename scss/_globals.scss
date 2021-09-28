@@ -96,3 +96,22 @@ a:hover {
 .m-r-10 {
   margin-right: 20px;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+  }
+
+  .heading {
+    margin-top: 60px;
+
+    & .gainer-loser {
+      flex-direction: column;
+    }
+
+    & h1 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}

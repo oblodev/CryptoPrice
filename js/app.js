@@ -293,7 +293,10 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   console.log(entry);
 
-  if (!entry.isIntersecting) header.classList.add("sticky");
+  if (entry.isIntersecting) header.classList.remove("sticky");
+  else {
+    header.classList.add("sticky");
+  }
 };
 
 const headerObserver = new IntersectionObserver(stickyNav, {

@@ -134,9 +134,8 @@ a:hover {
 }
 
 .header {
-  padding-top: 10px;
+  padding: 12px;
   width: 100%;
-  margin: auto;
 }
 
 .header__spacer h1 {
@@ -163,8 +162,20 @@ a:hover {
   text-decoration: underline;
 }
 
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+}
+
 .heading {
-  margin: 50px;
+  margin: 60px;
 }
 
 .heading h1 {
@@ -273,6 +284,8 @@ a:hover {
 @media (max-width: 768px) {
   .heading {
     margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .heading .gainer-loser {
     -webkit-box-orient: vertical;
@@ -283,6 +296,10 @@ a:hover {
   .heading h1 {
     font-size: 24px;
     margin-bottom: 40px;
+  }
+  .heading .gainer-wrapper,
+  .heading .loser-wrapper {
+    padding: 4px 20px;
   }
 }
 

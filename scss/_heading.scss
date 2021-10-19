@@ -1,5 +1,5 @@
 .heading {
-  margin: 50px;
+  margin: 60px;
 
   & h1 {
     font-size: 28px;
@@ -80,6 +80,8 @@
 @media (max-width: 768px) {
   .heading {
     margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
 
     & .gainer-loser {
       flex-direction: column;
@@ -88,6 +90,11 @@
     & h1 {
       font-size: 24px;
       margin-bottom: 40px;
+    }
+
+    & .gainer-wrapper,
+    & .loser-wrapper {
+      padding: 4px 20px;
     }
   }
 }

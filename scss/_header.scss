@@ -1,7 +1,6 @@
 .header {
-  padding-top: 10px;
+  padding: 12px;
   width: 100%;
-  margin: auto;
 
   &__spacer {
     & h1 {
@@ -27,5 +26,17 @@
 
   &__links &__links a:hover {
     text-decoration: underline;
+  }
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
   }
 }

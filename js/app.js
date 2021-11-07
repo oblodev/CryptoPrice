@@ -5,6 +5,7 @@ const euros = document.getElementById("euro");
 const usds = document.getElementById("usd");
 const theGainer = document.getElementById("gainer-wrapper");
 const theLoser = document.getElementById("loser-wrapper");
+const spinnerContainer = document.getElementById("crypto-spinner");
 const usdollar = "usd";
 const eureur = "eur";
 const euro = 0.86;
@@ -12,6 +13,19 @@ const de = "de";
 const en = "en";
 const euroSign = "€";
 const dollarSign = "$";
+const gainerLoserContainer = document.querySelector(".gainer-loser");
+
+//const renderSpinner = function (parentEl) {
+//  const markup = `
+//  <<div class="spinner">
+//  <svg>
+//   <use href="icons.svg#icon-loader"></use>
+// </svg>
+//</div>
+//  `;
+//  parentEl.innerHTML = "";
+//  parentEl.innerHTML = markup;
+//};
 
 function getData(cryptoPriceData, formatCurrency, sign) {
   let data = "";
@@ -77,9 +91,8 @@ function getData(cryptoPriceData, formatCurrency, sign) {
 }
 
 function workStatData(gainerLoserData, currSign) {
-  console.log(gainerLoserData);
   const strings = gainerLoserData.map((values) => {
-    //console.log(values);
+    console.log(values);
 
     const arrValues = Object.entries(values);
     //console.log(arrValues);
@@ -285,22 +298,22 @@ euros.addEventListener("click", function () {
 });
 
 // Sticky Nav
-const header = document.querySelector(".header");
-const obsCrypto = document.querySelector(".obsCrypto");
+//const header = document.querySelector(".header");
+//const obsCrypto = document.querySelector(".obsCrypto");
 //const navHeight = obsCrypto.getBoundingClientRect().height;
+//
+//const stickyNav = function (entries) {
+//  const [entry] = entries;
+//  console.log(entry);
+//
+//  if (entry.isIntersecting) header.classList.remove("sticky");
+//  else {
+//    header.classList.add("sticky");
+//  }
+//};
 
-const stickyNav = function (entries) {
-  const [entry] = entries;
-  console.log(entry);
-
-  if (entry.isIntersecting) header.classList.remove("sticky");
-  else {
-    header.classList.add("sticky");
-  }
-};
-
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-});
-headerObserver.observe(obsCrypto);
+//const headerObserver = new IntersectionObserver(stickyNav, {
+//  root: null,
+//  threshold: 0,
+//});
+//headerObserver.observe(obsCrypto);

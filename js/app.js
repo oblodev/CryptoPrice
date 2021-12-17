@@ -66,6 +66,12 @@ function getData(cryptoPriceData, formatCurrency, sign) {
 
     const cryptoLogo = values.image;
 
+    let price_1h = values.price_change_percentage_1h_in_currency;
+    let price_24h = values.price_change_percentage_24h;
+
+    const price_1hour = parseFloat(price_1h).toFixed(2);
+    const price_24hours = parseFloat(price_24h).toFixed(2);
+
     data += `
     <tr>
       <th cope="row" class="p-16 bold">${values.market_cap_rank} </th>
@@ -73,12 +79,8 @@ function getData(cryptoPriceData, formatCurrency, sign) {
       values.name
     } (${values.symbol.toUpperCase()})</td>
       <td class="table__t-a-r p-16"> ${sign}${formattedCryptoPrice}</td>
-      <td class="${color1H} table__t-a-r p-16 hide">${values.price_change_percentage_1h_in_currency.toFixed(
-      2
-    )}%</td>
-      <td class="${color24} table__t-a-r p-16">${values.price_change_percentage_24h.toFixed(
-      2
-    )}%</td>
+      <td class="${color1H} table__t-a-r p-16 hide">${price_1hour}%</td>
+      <td class="${color24} table__t-a-r p-16">${price_24hours}%</td>
       <td class="${color7D} table__t-a-r p-16 hide">${values.price_change_percentage_7d_in_currency.toFixed(
       2
     )}%</td>
@@ -92,8 +94,6 @@ function getData(cryptoPriceData, formatCurrency, sign) {
 
 function workStatData(gainerLoserData, currSign) {
   const strings = gainerLoserData.map((values) => {
-    console.log(values);
-
     const arrValues = Object.entries(values);
     //console.log(arrValues);
     const changes24 = [
